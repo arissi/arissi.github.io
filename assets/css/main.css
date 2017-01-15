@@ -1,0 +1,157 @@
+* { box-sizing: border-box; }
+
+body { font-family: 'Roboto', sans-serif; line-height: 1.8; background: #fafafa; }
+
+@media screen and (min-width: 500px) { html { font-size: 13px; } }
+@media screen and (min-width: 800px) { html { font-size: 14px; } }
+@media screen and (min-width: 1000px) { html { font-size: 16px; } }
+h1, h2, h3, h4, h5, h6 { margin-bottom: .5rem; font-weight: bold; line-height: 1.25; font-family: "Bitter", serif; color: inherit; text-rendering: optimizeLegibility; }
+
+h2 { margin-top: 1rem; font-size: 1.8rem; }
+
+h3 { margin-top: 1.5rem; font-size: 1.4rem; }
+
+h4, h5, h6 { margin-top: 1rem; font-size: 1.25rem; }
+
+.serif { font-family: 'Roboto Slab', serif; } 
+.light { font-weight: 300; } 
+.bold { font-weight: 700; }
+
+.container { position: relative; }
+
+hr { border-color: #515151; }
+
+a { color: #222 ;-webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; } 
+a:visited, a:hover, a:active, a:focus, a:link { color: #222; text-decoration: none; }
+
+p { margin-top: 0; margin-bottom: 1rem; font-size: 1rem; }
+p a { text-decoration: underline; }
+
+small { font-size: 85%; }
+small a:hover { background: #222; color: #fff; text-decoration: none; }
+
+
+/* Navbar */
+nav { position: fixed; left: 0; right: 0; top: 0; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); min-height: 55px;
+    background: #fafafa; z-index: 1000; } 
+.nav-margin { margin-top: 55px; background: #222; color: #fff; padding: 100px 0 150px 0; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
+.nav-items li { display: inline-block; font-size: 18px; }
+.nav-items li a:hover { background: #222; color: #fff; }
+
+.nav-items, .mobile-nav-items { padding: 0; list-style-type: none; margin: 0; text-align: center; }
+.nav-items li a, .mobile-nav-items li a { display: block; padding: 15px 50px; color: #222; text-decoration: none; box-sizing: border-box; }
+.mobile-menu { position: fixed; background: #fff; left: 0px; top: -500px; z-index: 1; width: 100%; transition: top .2s ease-out;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+.mobile-nav-items li a { display: block; padding: 15px 0; color: #222; }
+.mobile-nav-items li { font-size: 18px; border-bottom: 1px solid #ddd; }
+
+.brand-link { display: inline-block; position: absolute; left: -12px; top: 16px; font-size: 1.1rem; } 
+.brand-link a:hover { text-decoration: none; color: #222; } 
+.social-links, .ham-menu { display: inline-block; position: absolute; font-size: 14px; right: 15px; top: 15px; } 
+i.ham-menu { color: #222; z-index: 1; display: none; } 
+.ham-menu:hover { color: #222; cursor: pointer; } 
+.social-links a { text-decoration: none; } 
+.social-links i { color: #222; margin-left: 20px; }
+.social-links span { font-size: 8px; font-weight: 700; position: absolute; } 
+span.gh { top: 25px; left: 21px; } 
+span.in { top: 25px; left: 65px; }
+
+
+/* Intro */
+.intro { position: relative; text-align: center; } 
+.intro h1 { font-size: 40px; margin-bottom: 0px; } 
+.intro hr { max-width: 50px; border-color: #fff; border-width: 3px; } 
+.intro p { font-size: 12px; margin: 0; }
+
+
+.home-page-section-content { padding: 5vmin 10vmin; }
+
+
+/* Skills */
+.skill-logos { height: auto; }
+.skill-logos .skill-logo-img { margin: 1rem 0.5rem; height: 50px; }
+.skill-logos .skill-logo-row { text-align: center; padding: 2rem 0; font-size: 3rem; }
+.skill-logos .skill-logo-row p { font-size: 1.2rem; }
+.skill-logos .skill-logo-col { text-align: center; }
+.skill-logos .has-tip { border-bottom: none; cursor: default; }
+
+
+/* Projects */
+.projects { height: auto; }
+.projects hr { margin-bottom: 3rem; }
+
+.center-block {float: none;}
+.project-box { -webkit-transition: box-shadow 0.3s ease-out; -moz-transition: box-shadow 0.3s ease-out; -ms-transition: box-shadow 0.3s ease-out; -o-transition: box-shadow 0.3s ease-out; transition: box-shadow 0.3s ease-out; padding: 1rem; text-align: center; background-color: #222; color: #fff; margin-bottom: 25px;}
+
+.project-box a { color: rgb(152, 152, 152); }
+.project-box a:hover { color: #fff; }
+.project-box h2.project-name { font-size: 1.5rem; }
+.project-box small { color: inherit; }
+.project-box:hover { box-shadow: 0 6px 10px 1px #515151; }
+
+
+/* Contact */
+.contact { margin-bottom: 100px; }
+.contact i { margin-right: 8px; }
+
+form button:active { outline: 0; }
+form *:focus { outline: 0; } 
+form input, form textarea, form button { display: block; width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ECEFF1; font-size: 16px;
+    color: #222; max-width: 460px; box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); border-radius: 3px; } 
+form textarea { height: 200px; } 
+form button { font-weight: 700; font-family: 'Roboto', sans-serif; transition: all 0.3s cubic-bezier(.25,.8,.25,1); } 
+form button { background: #ECEFF1; color: #333; }
+
+.email-confirm { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 95%; max-width: 400px; background: #fff; border: 2px solid #222;
+    padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); display: none; } 
+.email-confirm .close-btn { position: absolute; right: 10px; top: 5px; z-index: 10000000; } 
+.email-confirm .close-btn:hover { cursor: pointer; } 
+
+
+
+@media (max-width: 520px) { 
+    html, body { font-size: 14px; }
+    .text-indent { text-indent: 30px; }
+    .skill-logos { height: 100vh; }
+    .skill-logos .skill-logo-img { margin: 0.5rem 0.5rem; height: 30px; }
+    .skill-logos .skill-logo-row { padding: 0.2rem 0; font-size: 0.5rem; }
+}
+
+
+@media (min-width: 601px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-items li a {
+        padding: 15px 20px;
+    }
+
+    .brand-link {
+        left: 10px;
+    }
+}
+
+@media (max-width: 767px) {
+    .intro {
+        text-align: center;
+    }
+
+    .home p {
+        max-width: 375px;
+    }
+}
+
+@media (max-width:600px) {
+
+    .nav-items,
+    .social-links {
+        display: none;
+    }
+
+    i.ham-menu {
+        display: block;
+    }
+}
