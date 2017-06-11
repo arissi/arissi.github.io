@@ -31,9 +31,9 @@
         <nav>
             <div class="container">
                 <ul class="nav-items">
-                    <li><a href="#about" class="active">ABOUT</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
+                    <li class="page-scroll"><a href="#about" class="active">ABOUT</a></li>
+                    <li class="page-scroll"><a href="#projects">PROJECTS</a></li>
+                    <li class="page-scroll"><a href="#contact">CONTACT</a></li>
                 </ul>
 
                 <div class="brand-link">
@@ -57,9 +57,9 @@
 
         <div class="mobile-menu" id="mobile-dropdown">
             <ul class="mobile-nav-items">
-                <li><a href="#about" class="mob-a">ABOUT</a></li>
-                <li><a href="#projects" class="mob-a">PORJECTS</a></li>
-                <li><a href="#contact" class="mob-a">CONTACT</a></li>
+                <li class="page-scroll"><a href="#about" class="mob-a">ABOUT</a></li>
+                <li class="page-scroll"><a href="#projects" class="mob-a">PORJECTS</a></li>
+                <li class="page-scroll"><a href="#contact" class="mob-a">CONTACT</a></li>
                 <li>
                     <a href="https://github.com/arissi" target="_blank" class="mob-a">
                         <i class="fa fa-github fa-2x" aria-hidden="true"></i>
@@ -123,7 +123,7 @@
 </section>
 
 <!--About-->
-<a name="about"></a>
+<section id="about">
   <div class="home-page-section-content">
     <h1>About&nbsp;&nbsp;<small><a href="./resume/rissi-resume.pdf">View resume&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a></small></h1>
     <hr>
@@ -141,11 +141,11 @@ to get software into the hands of millions of people through a web browser. </p>
 <p class="text-indent">  In my free time, I enjoy things like weightlifting, MMA, 
 philosophy, reading, and am very enthusiastic about video games and movies. </p>
 </div>
+</section>
 
 
 <!--Projects-->
-<section class="projects">
-<a name="projects"></a>
+<section class="projects" id="projects">
   <div class="projects-content home-page-section-content">
     <h1 class="projects-title">Projects&nbsp;&nbsp;&nbsp;<small><a href="https://github.com/arissi">See all&nbsp;&nbsp;<i class="fa fa-angle-right"></i></a></small></h1>
     <hr>
@@ -205,7 +205,7 @@ philosophy, reading, and am very enthusiastic about video games and movies. </p>
 </section>
 
 <!--Contact-->
-    <a name="contact"></a>
+    <a id="contact"></a>
         <div class="home-page-section-content center-block col-xs-12 col-sm-6 col-md-6">
             <div class="well contact">
 
@@ -259,10 +259,18 @@ philosophy, reading, and am very enthusiastic about video games and movies. </p>
 </body>
 
     <script src="https://use.fontawesome.com/f6c441418b.js"></script>
-        <script
-    src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!--Theme JavaScript-->
     <script src="./assets/js/main.js"></script>
 </html>

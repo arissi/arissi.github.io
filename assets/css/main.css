@@ -114,7 +114,6 @@ form button { background: #ECEFF1; color: #333; }
 @media (max-width: 520px) { 
     html, body { font-size: 14px; }
     .text-indent { text-indent: 30px; }
-    .skill-logos { height: 100vh; }
     .skill-logos .skill-logo-img { margin: 0.5rem 0.5rem; height: 30px; }
     .skill-logos .skill-logo-row { padding: 0.2rem 0; font-size: 0.5rem; }
 }
